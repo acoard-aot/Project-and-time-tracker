@@ -104,7 +104,7 @@ export default {
   },
   methods: {
     showValidationMessage(value, count) {
-      if ((this.codesRequired && !value) || (value.length && value.length !== count)) {
+      if ((this.codesRequired && !value) || (value && value.length && value.length !== count)) {
         return `Exactly ${count} characters required`;
       }
       return true; // added to avoid warning 'rules can't be undefined' after atyping valid value
