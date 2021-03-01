@@ -299,7 +299,7 @@ async function generateExportEntries(
     financeDetailHour.entryDate = timesheetEntry.entryDate;
     financeDetailHour.description = timesheetEntry.commentsUnBillable;
     financeDetailHour.hours = timesheetEntry.hoursUnBillable;
-    financeDetailHour.type = "Time";
+    financeDetailHour.type = "Non-Billable Time";
     financeDetailHour.user = timeSheet.userId;
     financeDetailHour.resource = timeSheet.user.contact.fullName;
     financeDetailHour.rate = 0;
