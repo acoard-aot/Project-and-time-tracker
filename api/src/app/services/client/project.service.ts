@@ -372,10 +372,7 @@ function mergeMous(mouList) {
 }
 
 export const retrieveFinanceData = async (obj, userId) => {
-  console.log('obj',obj);
-  console.log('userId',userId);
   const financeExport = obj.selectedProjects as IFinanceExport[];
-  console.log('financeExport',financeExport);
   const documentNo: string = uuidv4();
   const selectedDate = obj.selectedDate.split('-');
 
@@ -641,10 +638,7 @@ export const retrieveFinanceData = async (obj, userId) => {
 };
 
 export const retrieveFinanceDataOld = async (obj, userId) => {
-  console.log('obj',obj);
-  console.log('userId',userId);
   const financeExport = obj.selectedProjectsOld as IFinanceExport[];
-  console.log('financeExport',financeExport);
   const documentNo: string = uuidv4();
   let mousSelected = [];
   for (let index = 0; index < financeExport.length; index++) {
