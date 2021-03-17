@@ -53,6 +53,7 @@ export interface IFinanceJSON {
   balanceMou: number;
   leadUser: string;
   financeName: string;
+  nonMinistryName:string;
   details: IFinanceExportDetail[];
   userFinanceCodes: IUserFinanceCodes[];
   clientAddress: IClientAddress[];
