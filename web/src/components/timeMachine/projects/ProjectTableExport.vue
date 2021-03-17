@@ -936,7 +936,11 @@ export default {
                   leftValue + 65,
                   topValue + 85
                 );
-
+  doc.text(
+                pdfValuesNonMinistry[i].nonMinistryName ? pdfValuesNonMinistry[i].nonMinistryName : "",
+                leftValue + 10,
+                topValue + 89
+              );
                 doc.text("Time:", leftValue + 145, topValue + 100);
                 doc.text("Expense:", leftValue + 145, topValue + 105);
                 doc.text(
@@ -1846,6 +1850,11 @@ export default {
                   leftValue + 65,
                   topValue + 85
                 );
+                  doc.text(
+                pdfValuesNonMinistry[i].nonMinistryName ? pdfValuesNonMinistry[i].nonMinistryName : "",
+                leftValue + 10,
+                topValue + 89
+              );
                 doc.text("Time:", leftValue + 145, topValue + 100);
                 doc.text("Expense:", leftValue + 145, topValue + 105);
                 doc.text(

@@ -735,6 +735,7 @@ export const retrieveFinanceData = async (obj, userId) => {
           "c.stob",
           "c.projectCode",
           "c.serviceCenter",
+          "c.nonMinistryName",
           "m.id",
           "m.name",
           "m.billingCount",
@@ -745,6 +746,7 @@ export const retrieveFinanceData = async (obj, userId) => {
 
       exportData.leadUser = "";
       exportData.financeName = "";
+      exportData.nonMinistryName = res.client.nonMinistryName;
       exportData.projectCreated = res.dateCreated;
       if (res.teamWideProject) {
         exportData.leadUser = "Procurement and Supply Division";
@@ -1044,6 +1046,7 @@ export const getNonMinistryFinanceExportResult = async (
           "p.mouAmount",
           "c.clientNo",
           "c.id",
+          "c.nonMinistryName",
           "c.stob",
           "c.projectCode",
           "c.serviceCenter",
@@ -1056,6 +1059,7 @@ export const getNonMinistryFinanceExportResult = async (
         .getOne();
       exportData.leadUser = "";
       exportData.financeName = "";
+      exportData.nonMinistryName = res.client.nonMinistryName;
       exportData.projectCreated = res.dateCreated;
       if (res.teamWideProject) {
         exportData.leadUser = "Procurement and Supply Division";
